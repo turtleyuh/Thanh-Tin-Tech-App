@@ -1,0 +1,35 @@
+{
+  "name": "thanh-tin-tech-main",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "@babel/node": "^7.13.10",
+    "axios": "^0.21.1",
+    "bootstrap": "^5.0.0-beta2",
+    "express": "^4.17.1",
+    "react-redux": "^7.2.2",
+    "redux": "^4.0.5",
+    "redux-thunk": "^2.3.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.13.10",
+    "@babel/core": "^7.13.10",
+    "@babel/preset-env": "^7.13.10",
+    "nodemon": "^2.0.7"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon --watch backend --exec babel-node backend/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/turtleyuh/Thanh-Tin-Tech-App.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/turtleyuh/Thanh-Tin-Tech-App/issues"
+  },
+  "homepage": "https://github.com/turtleyuh/Thanh-Tin-Tech-App#readme"
+}

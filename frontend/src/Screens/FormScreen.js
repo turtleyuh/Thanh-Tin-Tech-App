@@ -58,45 +58,46 @@ function FormScreen(props){
     return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email);
   }
 }
-  return <div className="container">
-  <form id="form" className="form">
-    <div className="header">
-        <h2>Gửi yêu cầu báo giá</h2>
-    </div>
-    
-    <div className="form-control">
-      <label>Tên</label>
-      <input type="text" placeholder="huy6mui" id="name" />
-      <i className="fas fa-check-circle"></i>
-      <i className="fas fa-exclamation-circle"></i>
-      <small>Error message</small>
-    </div>
-    
-    <div className="form-control">
-      <label>Email</label>
-      <input type="email" placeholder="huy6mui@gmail.com" id="email" />
-      <i className="fas fa-check-circle"></i>
-      <i className="fas fa-exclamation-circle"></i>
-      <small>Error message</small>
-    </div>
-    <div className="form-control">
-      <label>Số điện thoại</label>
-      <input type="number" placeholder="huy6mui" />
-      <i className="fas fa-check-circle"></i>
-      <i className="fas fa-exclamation-circle"></i>
-      <small>Error message</small>
-    </div>
-    
-    <div className="form-control">
-      <label>Địa chỉ</label>
-      <input type="address" placeholder="huy6mui" />
-      <i className="fas fa-check-circle"></i>
-      <i className="fas fa-exclamation-circle"></i>
-      <small>Error message</small>
-    </div>
-    <button>Xác nhận</button>
-  </form>
-</div>
+  return <div className="form-container">
+          <form id="form" className="form">
+            <div className="header">
+                <h2>Gửi yêu cầu báo giá</h2>
+            </div>
+            
+            <div className="form-control">
+              <label>Tên</label>
+              <input type="text" placeholder="Nguyễn Văn A" id="name" />
+              <i className="fas fa-check-circle"></i>
+              <i className="fas fa-exclamation-circle"></i>
+              <small>Error message</small>
+            </div>
+            
+            <div className="form-control">
+              <label>Email</label>
+              <input type="email" placeholder="nguyenvana@gmail.com" id="email" />
+              <i className="fas fa-check-circle"></i>
+              <i className="fas fa-exclamation-circle"></i>
+              <small>Error message</small>
+            </div>
+            <div className="form-control">
+              <label>Số điện thoại</label>
+              <input type="number" placeholder="090xxx" />
+              <i className="fas fa-check-circle"></i>
+              <i className="fas fa-exclamation-circle"></i>
+              <small>Error message</small>
+            </div>
+            
+            <div className="form-control">
+              <label>Địa chỉ</label>
+              <input type="address" placeholder="..." />
+              <i className="fas fa-check-circle"></i>
+              <i className="fas fa-exclamation-circle"></i>
+              <small>Error message</small>
+            </div>
+            <button>Xác nhận</button>
+          </form>
+        </div>
+  
 }
 
 export default FormScreen;

@@ -26,59 +26,59 @@ function ProductScreen(props){
     }
         return  <div>
             <div className="dropdown">
-            <button onClick={dropdownmenu} class="dropbtn"><i class="fas fa-bars"></i>Danh mục sản phẩm</button>
-            <div id="myDropdown" className="dropdown-content">
-               <div className="row">
-               <div className="column">
-                    <Link className="category menu-item1" to="/category">
-                    THIẾT BỊ NGÀNH GIẤY
-                    </Link>
-                    <Link className="category menu-item2" to="#">
-                    THIẾT BỊ NGÀNH BAO BÌ GIẤY
-                    </Link>
-                    <Link className="menu-item3 category" to="#">
-                    THIẾT BỊ NGÀNH BAO BÌ NHỰA
-                    </Link>
-                    <Link className="menu-item4 category" to="#">
-                    THIẾT BỊ NGÀNH CAO SU - NHỰA
-                    </Link>
-                    <Link className="menu-item5 category" to="#">
-                    THIẾT BỊ THỬ NGHIỆM THÉP
-                    </Link>
-               </div>
-                <div className="column">
-                    <Link className="menu-item6 category" to="#">
-                    THIẾT BỊ NGÀNH SƠN - XI MẠ
-                    </Link>
-                    <Link className="menu-item7 category" to="#">
-                    THIẾT BỊ NGÀNH VẬT LIỆU XÂY DỰNG
-                    </Link>
-                    <Link className="menu-item8 category" to="#">
-                    THIẾT BỊ NGÀNH THỰC PHẨM
-                    </Link>
-                    <Link className="menu-item9 category" to="#">
-                    THIẾT BỊ NGÀNH NƯỚC VÀ MÔI TRƯỜNG
-                    </Link>
-                    <Link className="menu-item10 category" to="#">
-                    THIẾT BỊ NGÀNH Y TẾ - SINH HỌC
-                    </Link>
+                <button onClick={dropdownmenu} class="dropbtn"><i class="fas fa-bars"></i>Danh mục sản phẩm</button>
+                <div id="myDropdown" className="dropdown-content">
+                    <div className="row">
+                    <div className="column">
+                            <Link className="category menu-item1" to="/category">
+                            THIẾT BỊ NGÀNH GIẤY
+                            </Link>
+                            <Link className="category menu-item2" to="#">
+                            THIẾT BỊ NGÀNH BAO BÌ GIẤY
+                            </Link>
+                            <Link className="menu-item3 category" to="#">
+                            THIẾT BỊ NGÀNH BAO BÌ NHỰA
+                            </Link>
+                            <Link className="menu-item4 category" to="#">
+                            THIẾT BỊ NGÀNH CAO SU - NHỰA
+                            </Link>
+                            <Link className="menu-item5 category" to="#">
+                            THIẾT BỊ THỬ NGHIỆM THÉP
+                            </Link>
+                    </div>
+                    <div className="column">
+                        <Link className="menu-item6 category" to="#">
+                        THIẾT BỊ NGÀNH SƠN - XI MẠ
+                        </Link>
+                        <Link className="menu-item7 category" to="#">
+                        THIẾT BỊ NGÀNH VẬT LIỆU XÂY DỰNG
+                        </Link>
+                        <Link className="menu-item8 category" to="#">
+                        THIẾT BỊ NGÀNH THỰC PHẨM
+                        </Link>
+                        <Link className="menu-item9 category" to="#">
+                        THIẾT BỊ NGÀNH NƯỚC VÀ MÔI TRƯỜNG
+                        </Link>
+                        <Link className="menu-item10 category" to="#">
+                        THIẾT BỊ NGÀNH Y TẾ - SINH HỌC
+                        </Link>
+                    </div>
+                    <div className="column">
+                        <Link className="menu-item11 category" to="#">
+                        THIẾT BỊ NGÀNH DƯỢC PHẨM
+                        </Link>
+                        <Link className="menu-item12 category" to="#">
+                        THIẾT BỊ ĐO ONLINE (KHÍ THẢI - NƯỚC THẢI - NƯỚC CẤP)
+                        </Link>
+                        <Link className="menu-item13 category" to="#">
+                        HỆ THỐNG QUAN TRẮC NƯỚC THẢI - KHÍ THẢI TỰ ĐỘNG
+                        </Link>
+                        <Link className="menu-item14 category" to="#">
+                        THIẾT BỊ CƠ BẢN PHÒNG THÍ NGHIỆM
+                        </Link>
+                    </div>
                 </div>
-                <div className="column">
-                    <Link className="menu-item11 category" to="#">
-                    THIẾT BỊ NGÀNH DƯỢC PHẨM
-                    </Link>
-                    <Link className="menu-item12 category" to="#">
-                    THIẾT BỊ ĐO ONLINE (KHÍ THẢI - NƯỚC THẢI - NƯỚC CẤP)
-                    </Link>
-                    <Link className="menu-item13 category" to="#">
-                    HỆ THỐNG QUAN TRẮC NƯỚC THẢI - KHÍ THẢI TỰ ĐỘNG
-                    </Link>
-                    <Link className="menu-item14 category" to="#">
-                    THIẾT BỊ CƠ BẢN PHÒNG THÍ NGHIỆM
-                    </Link>
                 </div>
-               </div>
-            </div>
             </div>
             <div className="products-box2">
                 <div>
@@ -100,7 +100,7 @@ function ProductScreen(props){
 								Model: <b>{product.model}</b>
 							</li>
 							<li>
-								<Link to={"/form/" + product._id}>Yêu cầu báo giá</Link>
+								<button>Yêu cầu báo giá</button>
 							</li>
 							<li>
 								<b>Mô tả sản phẩm:</b>
